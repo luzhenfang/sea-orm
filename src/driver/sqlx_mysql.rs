@@ -61,7 +61,7 @@ impl SqlxMySqlConnector {
                 );
             }
         }
-        opt = opt.timezone(Some("+08:00".to_string());
+        opt = opt.timezone(Some("+08:00".to_string()));
         let pool = if options.connect_lazy {
             options.sqlx_pool_options().connect_lazy_with(opt)
         } else {
